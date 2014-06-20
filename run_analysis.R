@@ -70,5 +70,5 @@ run_analysis <- function() {
                         FUN="mean")
   names(groupset)[1:2] <- c('subject', 'activity')
 
-  write.table(tidy, 'tidy.txt', row.names=FALSE, sep="\t")
+  write.table(groupset, 'tidy.txt', row.names=FALSE, sep="\t")
 }
